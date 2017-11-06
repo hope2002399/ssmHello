@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration> 
+
+	  <typeAliases>  
+      <typeAlias type="org.apache.commons.collections.map.CaseInsensitiveMap" alias="CIMap" /> 
+	</typeAliases>	  
+	<!-- <plugins>
+		<plugin interceptor="com.inno.core.base.utils.mybatis.MyBatisPageInterceptor">
+			<property name="dialect" value="oracle" />
+			<property name="mappedStatementIdRegex" value="*Paging" />
+		</plugin>
+	</plugins> -->
+	
+</configuration>
+
+
+

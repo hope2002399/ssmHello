@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
+
+		<diskStore path="java.io.tmpdir/localcache/egrantapp" />
+
+		<defaultCache maxElementsInMemory="1000" eternal="false"
+			timeToIdleSeconds="1200" timeToLiveSeconds="1200" overflowToDisk="true"
+			maxElementsOnDisk="10000" diskPersistent="false"
+			diskExpiryThreadIntervalSeconds="1200" memoryStoreEvictionPolicy="LRU" />
+		
+		<!--notice: eternal：true表示对象永不过期，此时会忽略timeToIdleSeconds和timeToLiveSeconds属性 -->
+		
+	 
+	    <!-- highcharts缓存  -->
+		<cache name="highchartsCache" maxElementsInMemory="500" eternal="false"
+			overflowToDisk="true" timeToIdleSeconds="36000" timeToLiveSeconds="36000" />			
+ 
+</ehcache>
