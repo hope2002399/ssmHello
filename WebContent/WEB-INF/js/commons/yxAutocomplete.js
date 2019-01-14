@@ -7,7 +7,7 @@
  * url：异步请求时的url
  * author:lj
  */
-function irisAutocomplete(inputId,url,params,jsParams){
+function yxAutocomplete(inputId,url,params,jsParams){
 	var hiddenId=inputId+"_hideId";
 	var hiddenName = inputId+"_hideName";
 	var hiddenIdObj=$("#"+hiddenId);
@@ -72,7 +72,7 @@ function irisAutocomplete(inputId,url,params,jsParams){
  * url：异步请求时的url
  * author:lj
  */
-function irisAutocompleteMultiSelect(inputId,url,params,jsParams){
+function yxAutocompleteMultiSelect(inputId,url,params,jsParams){
 	var hiddenId=inputId+"_hideId";
 	$("#"+inputId).autocompleteMultiSelect(url, {
 		multiple: true,
@@ -149,7 +149,7 @@ hidden_out_div = function(evt) {
  * url：异步请求时的url
  * author:lj
  */
-function irisAutocomplete2(inputId,url,params){
+function yxAutocomplete2(inputId,url,params){
 	var hiddenId=inputId+"_hideId";
 	$("#"+inputId).autocomplete(url, {
 		minChars: 1,//最少输入几个字节
@@ -197,7 +197,7 @@ function irisAutocomplete2(inputId,url,params){
 }
 
 
-function irisAutocompleteTestKeyword(inputId,url,params){
+function yxAutocompleteTestKeyword(inputId,url,params){
 	$("#"+inputId).autocomplete(url, {
 		minChars: 0,//最少输入几个字节
 		width: 135,//下拉框的宽度,默认为输入框的宽度
@@ -231,7 +231,7 @@ function irisAutocompleteTestKeyword(inputId,url,params){
 	});
 }
 
-function irisAutocompleteKeyword(inputId,url,params){
+function yxAutocompleteKeyword(inputId,url,params){
 	$("#"+inputId).autocomplete(url, {
 		minChars: 1,//最少输入几个字节
 		width: 135,//下拉框的宽度,默认为输入框的宽度

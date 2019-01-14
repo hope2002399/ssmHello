@@ -54,7 +54,7 @@ public class SqlConverUtils {
 		while (m.find()) {
 			key = m.group().toLowerCase();
 			paramKey = key.substring(2, key.length() - 2);// 去掉[@ @]
-			sql = IrisStringUtils.regexReplaceString(sql, "\\[@" + paramKey + "@\\]", "?");
+			sql = yxStringUtils.regexReplaceString(sql, "\\[@" + paramKey + "@\\]", "?");
 			params.add(constMap.get(paramKey));
 
 		}
@@ -84,7 +84,7 @@ public class SqlConverUtils {
 			map.putAll(constMap);
 		}
 		mapKey2Lowercase(map);
-		List<String> keyList = IrisStringUtils.extractFromSpecStr(ql, null, -1);
+		List<String> keyList = yxStringUtils.extractFromSpecStr(ql, null, -1);
 		Set<String> setList = new HashSet<String>(keyList);
 		Iterator<String> keyIt = setList.iterator();
 		Map<String, Object> conditionMap = new HashMap<String, Object>();
@@ -95,12 +95,12 @@ public class SqlConverUtils {
 			String replaceKey = "null";
 			if (map.containsKey(key)) {
 				replaceKey = ":" + key;
-				// ql = IrisStringUtils.regexReplaceString(ql, replacedKey, replaceKey);
+				// ql = yxStringUtils.regexReplaceString(ql, replacedKey, replaceKey);
 				conditionMap.put(key, map.get(key));
 			} else {
 				keyIt.remove();
 			}
-			ql = IrisStringUtils.regexReplaceString(ql, replacedKey, replaceKey);
+			ql = yxStringUtils.regexReplaceString(ql, replacedKey, replaceKey);
 		}
 
 		map.clear();
@@ -130,13 +130,13 @@ public class SqlConverUtils {
 			key = m.group();
 			paramKey = key.substring(2, key.length() - 2);// 去掉[@ @]，同时将密码明文用<span></span>括起来
 			if (map.get(paramKey) != null && !"".equals(map.get(paramKey))) {
-				str = IrisStringUtils.regexReplaceString(
+				str = yxStringUtils.regexReplaceString(
 						str,
 						"\\[@" + paramKey + "@\\]",
 						StringUtils.equalsIgnoreCase(paramKey, ServiceConstants.PASSWORD) ? "<span>"
 								+ map.get(paramKey) + "</span>" : map.get(paramKey));
 			} else if (map.get(paramKey.toUpperCase()) != null && !"".equals(map.get(paramKey.toUpperCase()))) {
-				str = IrisStringUtils.regexReplaceString(
+				str = yxStringUtils.regexReplaceString(
 						str,
 						"\\[@" + paramKey + "@\\]",
 						StringUtils.equalsIgnoreCase(paramKey, ServiceConstants.PASSWORD) ? "<span>"

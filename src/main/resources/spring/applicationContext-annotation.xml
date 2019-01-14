@@ -11,9 +11,9 @@
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd"
                         default-lazy-init="true">  
     <!-- 自动扫描 -->  
-    <context:component-scan base-package="cn.iris.com"  scoped-proxy="interfaces"/>
-    <context:component-scan base-package="cn.iris.com"  scoped-proxy="targetClass"/>
-    <context:component-scan base-package="com.iris.egrant"  scoped-proxy="targetClass"/>
-    <context:component-scan base-package="com.iris.egrant"  scoped-proxy="interfaces"/>
+    <context:component-scan base-package="cn.yx.com"  scoped-proxy="interfaces"/>
+    <context:component-scan base-package="cn.yx.com"  scoped-proxy="targetClass"/>
+    <context:component-scan base-package="com.yx.egrant"  scoped-proxy="targetClass"/>
+    <context:component-scan base-package="com.yx.egrant"  scoped-proxy="interfaces"/>
   
 </beans>  

@@ -10,7 +10,7 @@
 
 	<tag>
 		<name>helpTips</name>
-		<tagclass> com.iris.egrant.web.struts2.tags.HelpTipsTag</tagclass>
+		<tagclass> com.yx.egrant.web.struts2.tags.HelpTipsTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>id</name>
@@ -41,7 +41,7 @@
 	</tag>
 	<tag>
 		<name>shortcut</name>
-		<tagclass> com.iris.egrant.web.struts2.tags.ShortCutTag</tagclass>
+		<tagclass> com.yx.egrant.web.struts2.tags.ShortCutTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>cacheable</name>
@@ -71,7 +71,7 @@
 	</tag>
 	<tag>
 		<name>tree</name>
-		<tagclass> com.iris.egrant.web.struts2.tags.TreeTag</tagclass>
+		<tagclass> com.yx.egrant.web.struts2.tags.TreeTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>key</name>
@@ -192,7 +192,7 @@
 	</tag>
 	<tag>
 		<name>personSelect</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.PersonSelectTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.PersonSelectTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>key</name>
@@ -242,7 +242,7 @@
 	</tag>
 	<tag>
 		<name>treeAndComplete</name>
-		<tagclass> com.iris.egrant.web.struts2.tags.TreeAndCompleteTag</tagclass>
+		<tagclass> com.yx.egrant.web.struts2.tags.TreeAndCompleteTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>key</name>
@@ -345,7 +345,7 @@
 	</tag>
 	<tag>
 		<name>date</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.DateTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.DateTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>locale</name>
@@ -397,7 +397,7 @@
 
 	<tag>
 		<name>pieChart</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.PieChartTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.PieChartTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>id</name>
@@ -445,7 +445,7 @@
 	
 	<tag>
 		<name>highChart</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.HighChartTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.HighChartTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		
 		<attribute>
@@ -471,7 +471,7 @@
 	
 	<tag>
 		<name>progressBar</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.ProgressBarTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.ProgressBarTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>id</name>
@@ -501,7 +501,7 @@
 	</tag>
 	<tag>
 		<name>autocomplete</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.AutoCompleteTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.AutoCompleteTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>id</name>
@@ -579,7 +579,7 @@
 
 	<tag>
 		<name>title</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.TitleTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.TitleTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>id</name>
@@ -602,7 +602,7 @@
 
 	<tag>
 		<name>select</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.SelectTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.SelectTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>id</name>
@@ -676,7 +676,7 @@
 	<!-- 查询条件控件 -->
 	<tag>
 		<name>search</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.SearchTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.SearchTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<info>
 		</info>
@@ -743,7 +743,7 @@
 	<!-- highcharts查询控件 -->
 	<tag>
 		<name>charts_search</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.HighChartsSearchTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.HighChartsSearchTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<info>
 		</info>
@@ -796,7 +796,7 @@
 	<!-- 复选框控件 -->
 	<tag>
 		<name>checkbox</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.CheckBoxTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.CheckBoxTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<info>
 		</info>
@@ -839,7 +839,7 @@
 	<!-- 常用意见控件 -->
 	<tag>
 		<name>opinion</name>
-		<tagclass>com.iris.egrant.web.struts2.tags.OpinionTag</tagclass>
+		<tagclass>com.yx.egrant.web.struts2.tags.OpinionTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>buttons</name>
@@ -871,7 +871,7 @@
 	<!-- 代码号(熟悉、申请...) 独立控件         hsz time:2012.10.12 -->
 <tag> 
   <name>treeAndCompleteForCode</name>
-  <tagclass> com.iris.egrant.web.struts2.tags.TreeAndCompleteForCodeTag</tagclass>
+  <tagclass> com.yx.egrant.web.struts2.tags.TreeAndCompleteForCodeTag</tagclass>
   <bodycontent>JSP</bodycontent>
   <attribute>
    <name>key</name>
@@ -969,7 +969,7 @@
  </tag>
 	<tag>
 		<name>prpAttach</name>
-		<tagclass> com.iris.egrant.web.struts2.tags.AttachTag</tagclass>
+		<tagclass> com.yx.egrant.web.struts2.tags.AttachTag</tagclass>
 		<bodycontent>JSP</bodycontent>
 		<attribute>
 			<name>grantCode</name>
@@ -1003,7 +1003,7 @@
 		<!-- 不需配置key 直接配sql语句         add by hsz 设置规则的参数（工作流）start -->
 <tag>
  	<name>selectBySql</name>
- 	<tagclass>com.iris.egrant.web.struts2.tags.SelectBySqlTag</tagclass>
+ 	<tagclass>com.yx.egrant.web.struts2.tags.SelectBySqlTag</tagclass>
  	<bodycontent>JSP</bodycontent>
  	<attribute>
  		<name>id</name>
@@ -1054,7 +1054,7 @@
  </tag>
  <tag>
  	<name>autocompleteBySql</name>
- 	<tagclass>com.iris.egrant.web.struts2.tags.AutoCompleteBySqlTag</tagclass>
+ 	<tagclass>com.yx.egrant.web.struts2.tags.AutoCompleteBySqlTag</tagclass>
  	<bodycontent>JSP</bodycontent>
  	<attribute>
 	   <name>id</name>
@@ -1127,7 +1127,7 @@
  
   <tag> 
   <name>treeAndCompleteBySql</name>
-  <tagclass> com.iris.egrant.web.struts2.tags.TreeAndCompleteBySqlTag</tagclass>
+  <tagclass> com.yx.egrant.web.struts2.tags.TreeAndCompleteBySqlTag</tagclass>
   <bodycontent>JSP</bodycontent>
   
   <attribute>
@@ -1212,7 +1212,7 @@
  
   <tag> 
   <name>treeBySql</name>
-  <tagclass> com.iris.egrant.web.struts2.tags.TreeBySqlTag</tagclass>
+  <tagclass> com.yx.egrant.web.struts2.tags.TreeBySqlTag</tagclass>
   <bodycontent>JSP</bodycontent>
   <attribute>
    <name>locale</name>
@@ -1293,7 +1293,7 @@
  
  <tag> 
   <name>prpFile</name>
-  <tagclass> com.iris.egrant.webapp.struts2.tag.PrpFileTag</tagclass>
+  <tagclass> com.yx.egrant.webapp.struts2.tag.PrpFileTag</tagclass>
   <bodycontent>JSP</bodycontent>
   <attribute>
    <name>grantCode</name>

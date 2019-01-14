@@ -27,7 +27,7 @@ function ArchiveFile(){
  * @param funName 回调函数名
  * @param tableId 相应的表id
  */
-function irisAjaxFileUpload(type,funName,tableId){
+function yxAjaxFileUpload(type,funName,tableId){
 	if(type==null||type==''){
 		alert("请输入附件类型");
 		return ;

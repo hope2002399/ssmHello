@@ -11,7 +11,7 @@
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd"
                         default-lazy-init="true"> 
         
-	<bean id="highchartsEhcacheService" class="com.iris.egrant.service.stat.HighchartsEhcacheServiceImpl">
+	<bean id="highchartsEhcacheService" class="com.yx.egrant.service.stat.HighchartsEhcacheServiceImpl">
 		<property name="highchartsCache">
 			<bean class="org.springframework.cache.ehcache.EhCacheFactoryBean">
 				<property name="cacheManager" ref="ehCacheCacheManager" />

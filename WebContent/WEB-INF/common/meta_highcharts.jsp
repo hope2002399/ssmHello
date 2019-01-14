@@ -5,11 +5,11 @@
 <link href="${res}/css/public.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="${res}/css/public-${locale}.css"  />
 <script type="text/javascript" src="${res}/js/message.tips-${locale}.js"></script>
-<script type="text/javascript" src="${res}/js/proposal/irisNote-${locale}.js"></script>
+<script type="text/javascript" src="${res}/js/proposal/yxNote-${locale}.js"></script>
 
 
 <!-- start highchartpie 饼状图-->
-<script  type="text/javascript" src="${res}/js/commons/irisHighcharts.js"></script>
+<script  type="text/javascript" src="${res}/js/commons/yxHighcharts.js"></script>
 <script type="text/javascript" src="${res}/js/plugins/highcharts/highcharts.js"></script> 
 <script type="text/javascript" src="${res}/js/plugins/highcharts/highcharts-3d.js"></script> 
 <script type="text/javascript" src="${res}/js/plugins/highcharts/highcharts-more.js"></script> 

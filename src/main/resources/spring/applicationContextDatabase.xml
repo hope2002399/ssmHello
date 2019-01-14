@@ -13,7 +13,7 @@
                         http://www.springframework.org/schema/mvc    
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd" >  
     <!-- 自动扫描 -->  
-    <context:component-scan base-package="cn.iris.com" />  
+    <context:component-scan base-package="cn.yx.com" />  
     
     <!-- 引入配置文件 -->  
     <bean id="propertyConfigurer"  
@@ -22,7 +22,7 @@
     </bean>  
   
   <!--  连接数据库配置，其实 也可以直接在  服务的 tomcat 的context.xml直接配置 
-  	<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/iris" /> 
+  	<jee:jndi-lookup id="dataSource" jndi-name="java:comp/env/jdbc/yx" /> 
   -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"  
         destroy-method="close">  
@@ -52,7 +52,7 @@
   
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->  
  <!--     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">  
-        <property name="basePackage" value="cn.iris.com。dao.demo" />  
+        <property name="basePackage" value="cn.yx.com。dao.demo" />  
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>  
     </bean>   -->
   
@@ -79,7 +79,7 @@
 		
 		<property name="packagesToScan">
 			<list>
-				<value>com.iris.egrant.component.model</value>
+				<value>com.yx.egrant.component.model</value>
 			</list>
 		</property>
 	</bean>  

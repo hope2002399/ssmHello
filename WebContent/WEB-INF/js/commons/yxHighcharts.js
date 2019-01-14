@@ -6,7 +6,7 @@
 var alldataList = {};
 var rootUrl = '';
 var selectYear = '';
-function IrisHighcharts(chartId) {
+function yxHighcharts(chartId) {
 	this.beanChart = this;
 	this.chartId = chartId; // chart 挂载点
 	this.type = "pie";  //chart 类型(默认为饼图)
@@ -60,7 +60,7 @@ function loadCharts(dataList, root, chartsKeys, divIds, defaultYear, beforeDoFun
 			$("#widget-content_"+ dataList[i].chartsKey).removeAttr("data-highcharts-chart");
 			if(dataList[i].chartDataObjs != '{}')
 			{
-				var charts = new IrisHighcharts("widget-content_"+ dataList[i].chartsKey);
+				var charts = new yxHighcharts("widget-content_"+ dataList[i].chartsKey);
 				charts.setSetting(dataList[i].chartAttrsObjs);
 				charts.setChartKey(dataList[i].chartsKey);
 				charts.setData(dataList[i].chartDataObjs)
@@ -136,7 +136,7 @@ function viewLargeCharts(chartKey)
 /**
  * building chart
  */
-IrisHighcharts.prototype.build = function(){
+yxHighcharts.prototype.build = function(){
 	var options = {
 			//主表区配置
 			chart:{
@@ -313,7 +313,7 @@ function setChartsType(obj, type)
 /**
  * building chart
  */
-IrisHighcharts.prototype.build2 = function(){
+yxHighcharts.prototype.build2 = function(){
 	var options = {
 			//主表区配置
 			chart:{
@@ -493,11 +493,11 @@ function setTheme(type, chartObj)
 /**
  * 获取chart Dom
  */
-IrisHighcharts.prototype.getChartDom = function() {
+yxHighcharts.prototype.getChartDom = function() {
 	return this.beanChart;
 };
 
-IrisHighcharts.prototype.setLinkUrl = function(linkUrl) {
+yxHighcharts.prototype.setLinkUrl = function(linkUrl) {
 	this.linkUrl=linkUrl;
 };
 /**
@@ -505,91 +505,91 @@ IrisHighcharts.prototype.setLinkUrl = function(linkUrl) {
  * @param url
  * string
  */
-IrisHighcharts.prototype.setUrl = function(url) {
+yxHighcharts.prototype.setUrl = function(url) {
 	this.url = url;
 };
 
-IrisHighcharts.prototype.setChartKey = function(chartKey) {
+yxHighcharts.prototype.setChartKey = function(chartKey) {
 	this.chartKey = chartKey;
 };
 
-IrisHighcharts.prototype.setDefaultYear = function(defaultYear) {
+yxHighcharts.prototype.setDefaultYear = function(defaultYear) {
 	this.defaultYear = defaultYear;
 };
 
-IrisHighcharts.prototype.getDefaultYear = function() {
+yxHighcharts.prototype.getDefaultYear = function() {
 	return this.defaultYear;
 };
 
-IrisHighcharts.prototype.setData = function(data) {
+yxHighcharts.prototype.setData = function(data) {
 	this.data = data;
 };
 
-IrisHighcharts.prototype.setChartId = function(chartId) {
+yxHighcharts.prototype.setChartId = function(chartId) {
 	this.chartId = chartId;
 };
 
-IrisHighcharts.prototype.setParams = function(params) {
+yxHighcharts.prototype.setParams = function(params) {
 	this.params = params;
 };
 
-IrisHighcharts.prototype.setType = function(type) {
+yxHighcharts.prototype.setType = function(type) {
 	this.type = type;
 };
 
-IrisHighcharts.prototype.setTitle = function(title) {
+yxHighcharts.prototype.setTitle = function(title) {
 	this.title = title;
 };
 
-IrisHighcharts.prototype.setSetting= function(setting) {
+yxHighcharts.prototype.setSetting= function(setting) {
 	this.setting = setting;
 };
 
-IrisHighcharts.prototype.setXAxis = function(xAxis) {
+yxHighcharts.prototype.setXAxis = function(xAxis) {
 	this.xAxis = xAxis;
 };
 
-IrisHighcharts.prototype.getXAxis = function() {
+yxHighcharts.prototype.getXAxis = function() {
 	return this.xAxis;
 };
 
-IrisHighcharts.prototype.setYAxis = function(yAxis) {
+yxHighcharts.prototype.setYAxis = function(yAxis) {
 	this.yAxis = yAxis;
 };
 
-IrisHighcharts.prototype.getYAxis = function() {
+yxHighcharts.prototype.getYAxis = function() {
 	return this.yAxis;
 };
 
-IrisHighcharts.prototype.setTooltip = function(tooltip) {
+yxHighcharts.prototype.setTooltip = function(tooltip) {
 	this.tooltip = tooltip;
 };
 
-IrisHighcharts.prototype.getTooltip = function() {
+yxHighcharts.prototype.getTooltip = function() {
 	return this.tooltip;
 };
 
-IrisHighcharts.prototype.setLegend = function(legend) {
+yxHighcharts.prototype.setLegend = function(legend) {
 	this.legend = legend;
 };
 
-IrisHighcharts.prototype.setPlotOptions = function(plotOptions) {
+yxHighcharts.prototype.setPlotOptions = function(plotOptions) {
 	this.plotOptions = plotOptions;
 };
 
-IrisHighcharts.prototype.getLegend = function() {
+yxHighcharts.prototype.getLegend = function() {
 	return this.legend;
 };
 
-IrisHighcharts.prototype.setCredits = function(credits) {
+yxHighcharts.prototype.setCredits = function(credits) {
 	this.credits = credits;
 };
 
-IrisHighcharts.prototype.getCredits = function() {
+yxHighcharts.prototype.getCredits = function() {
 	return this.credits;
 };
 
-IrisHighcharts.prototype.setExporting = function(exporting) {
+yxHighcharts.prototype.setExporting = function(exporting) {
 	this.exporting = exporting;
 };
 

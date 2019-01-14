@@ -161,10 +161,10 @@ public abstract class Assert {
 	 *            the string to check
 	 * @param message
 	 *            the exception message to use if the assertion fails
-	 * @see IrisStringUtils#hasLength
+	 * @see yxStringUtils#hasLength
 	 */
 	public static void hasLength(String text, String message) {
-		if (!IrisStringUtils.hasLength(text)) {
+		if (!yxStringUtils.hasLength(text)) {
 			throw new IllegalArgumentException(message);
 		}
 	}
@@ -178,7 +178,7 @@ public abstract class Assert {
 	 * 
 	 * @param text
 	 *            the string to check
-	 * @see IrisStringUtils#hasLength
+	 * @see yxStringUtils#hasLength
 	 */
 	public static void hasLength(String text) {
 		hasLength(text,
@@ -197,10 +197,10 @@ public abstract class Assert {
 	 *            the string to check
 	 * @param message
 	 *            the exception message to use if the assertion fails
-	 * @see IrisStringUtils#hasText
+	 * @see yxStringUtils#hasText
 	 */
 	public static void hasText(String text, String message) {
-		if (!IrisStringUtils.hasText(text)) {
+		if (!yxStringUtils.hasText(text)) {
 			throw new IllegalArgumentException(message);
 		}
 	}
@@ -215,7 +215,7 @@ public abstract class Assert {
 	 * 
 	 * @param text
 	 *            the string to check
-	 * @see IrisStringUtils#hasText
+	 * @see yxStringUtils#hasText
 	 */
 	public static void hasText(String text) {
 		hasText(text,
@@ -237,7 +237,7 @@ public abstract class Assert {
 	 *            the exception message to use if the assertion fails
 	 */
 	public static void doesNotContain(String textToSearch, String substring, String message) {
-		if (IrisStringUtils.hasLength(textToSearch) && IrisStringUtils.hasLength(substring)
+		if (yxStringUtils.hasLength(textToSearch) && yxStringUtils.hasLength(substring)
 				&& textToSearch.indexOf(substring) != -1) {
 			throw new IllegalArgumentException(message);
 		}

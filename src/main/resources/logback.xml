@@ -30,7 +30,7 @@
 		<appender-ref ref="stdout" />
 	</root>
 	
-	<logger name="cn.iris.com">
+	<logger name="cn.yx.com">
 		<level value="INFO" />
 	</logger>
 	

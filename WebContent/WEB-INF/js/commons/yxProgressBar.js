@@ -5,7 +5,7 @@
  * percent 百分比数字
  * isShowText 是否显示文本
  */ 
-function irisProgressBarPercent(res,progressBarId,percent,isShowText){
+function yxProgressBarPercent(res,progressBarId,percent,isShowText){
 	
 	if(percent=="undefined")
 		percent=0
@@ -31,7 +31,7 @@ function irisProgressBarPercent(res,progressBarId,percent,isShowText){
  * isShowText 是否显示文本
  * callbackFun 回调函数
  */ 
-function irisProgressBarFraction(res,progressBarId,currVal,maxVal,isShowText,callbackFun){
+function yxProgressBarFraction(res,progressBarId,currVal,maxVal,isShowText,callbackFun){
 	if(currVal=="undefined")
 		percent=0
 	if(maxVal=="undefined")

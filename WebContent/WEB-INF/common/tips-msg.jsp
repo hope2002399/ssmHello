@@ -22,7 +22,7 @@
 一、css,js导入
 	<link href="${res}/css/public.css" rel="stylesheet" type="text/css" />
 	<link href="${res}/css/public-${locale}.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="${res}/js/commons/irisHelptips.js"></script>
+	<script type="text/javascript" src="${res}/js/commons/yxHelptips.js"></script>
 
 二、在需要显示操作消息的位置添加
 	include file="/common/tips-msg.jsp"
